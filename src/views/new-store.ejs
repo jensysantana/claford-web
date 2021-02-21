@@ -1,0 +1,114 @@
+<%- include('./components/head/head') %>
+    </head>
+
+    <body>
+        <%- include('./components/headerWeb/headerWeb') %>
+            <div class="container">
+                <div id="alertShow" class="my-3"></div>
+                <form class="was-validatged mt-10 p-5" id="formStore">
+                    <div class="mb-3">
+                        <label for="seller-type">Seller type <sub>*</sub></label>
+                        <select class="custom-select mb-3" name="seller_type" style="height: 4rem;" id="seller-type" required>
+                            <option value="">Choose...</option>
+                            <option value="1">Recurrent seller, allow create store</option>
+                            <option value="2">Ocational seller or Sell once</option>
+                        </select>
+                        <!-- <div class="invalid-feedback">Example invalid custom select feedback</div> -->
+                        <p class="form-group-input-error"></p>
+                    </div>
+                    <hr class="my-5" />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="store-name">Store name <sub>*</sub></label>
+                            <input type="text" class="form-control input-height" name="store_name" id="store_name">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="country">Country <sub>*</sub></label>
+                        <select class="custom-select input-height" name="country" id="country" required>
+                            <option value="">Choose...</option>
+                            <option value="1">United States</option>
+                            <option value="2">Europa</option>
+                            <option value="3">Haiti</option>
+                            <option value="4">Dominican Republic</option>
+                        </select>
+                        <!-- <div class="invalid-feedback">Example invalid custom select feedback</div> -->
+                        <p class="form-group-input-error"></p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Street address <sub>*</sub></label>
+                            <input type="email" class="form-control input-height" name="inputAddress" id="inputAddress" placeholder="1234 Main St">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Street address 2</label>
+                            <input type="text" class="form-control input-height" name="inputAddress2" id="inputAddress2">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputCity">City <sub>*</sub></label>
+                            <input type="text" class="form-control input-height" name="inputCity" id="inputCity">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="inputState">State <sub>*</sub></label>
+                            <select name="inputState" id="inputState" class="form-control input-height">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                            <p class="form-group-input-error"></p>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip <sub>*</sub></label>
+                            <input type="text" class="form-control input-height" name="inputZip" id="inputZip">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control input-height" name="email" id="email">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone <sub>*</sub></label>
+                            <input type="text" class="form-control input-height" name="phone" id="phone">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                    </div>
+
+                    <hr class="my-5" />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="prod-name">Product name <sub>*</sub></label>
+                            <input type="text" class="form-control input-height" name="prod-name" id="prod-name">
+                            <p class="form-group-input-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                 Acept terms and conditions
+                            </label>
+                        </div>
+                        <p class="form-group-input-error"></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+            </div>
+
+            <%- include('./components/footer/footer') %>
+                <script src="/assets/js/become-a-vendor.js"></script>
+                <script src="/assets/js/main.js"></script>
+    </body>
+
+    </html>

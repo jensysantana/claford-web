@@ -1,0 +1,110 @@
+<%- include('./components/head/head') %>
+
+    </head>
+
+    <body>
+        <%- include('./components/headerWeb/headerWeb') %>
+
+            <div class="ps-page--my-account">
+
+                <div class="ps-my-account-2">
+                    <div class="container">
+                        <div class="ps-section__wrapper">
+                            <div class="ps-section__left">
+                                <div class="d-flex justify-content-center mb-5">
+                                    <h1>Sign In</h1>
+                                </div>
+
+                                <div id="alertShow" class="my-3 text-center"></div>
+                                <form class="ps-form--account ps-tab-root" id="signInForm">
+                                    <div class="ps-form__content">
+                                        <h5>Sign In with your account</h5>
+                                        <div class="form-group">
+                                            <label for="email" class="mb-2">Email</label>
+                                            <input class="form-control" type="text" value="jensysantana@gmail.co" name="email" id="email">
+                                            <p class="form-group-input-error"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="mb-3">Password</label>
+                                            <div class="form-group form-forgot mb-0">
+                                                <input class="form-control" type="password" value="Jashly326" name="password" id="password">
+                                                <!-- <a href="/auth/recovery" id="forgot-password">Forgot?</a> -->
+                                                <p class="form-group-input-error"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <a class="text-primary" href="/auth/sign-up">Register</a>
+                                            <br>
+                                            <a class="text-primary" href="/auth/recovery" id="forgot-password">Password recovery</a>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="ps-checkbox">
+                                                <input class="form-control" type="checkbox" id="remember-me" name="remember-me">
+                                                <label for="remember-me">Stay signed in</label>
+                                            </div>
+                                            <p class="mt-3">Using a public or shared device? Uncheck to protect your account. <a class="text-primary" href="#">Learn more</a></p>
+
+                                        </div>
+
+                                        <div class="form-group submtit mt-5">
+                                            <button class="ps-btn ps-btn--fullwidth" id="SignUp">Sign In</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="ps-form__footer">
+                                        <p>Connect with:</p>
+                                        <ul class="ps-list--social">
+                                            <li>
+                                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="google" id="google-sign-in" href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="ps-section__right">
+                                <figure class="ps-section__desc">
+                                    <figcaption>Sign up today and you will be able to:</figcaption>
+                                    <p>MartFury Buyer Protection has you covered from click to delivery. Sign up or sign in and you will be able to:</p>
+                                    <ul class="ps-list">
+                                        <li>
+                                            <i class="icon-credit-card"></i><span>SPEED YOUR WAY THROUGH CHECKOUT</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-clipboard-check"></i><span>TRACK YOUR ORDERS EASILY</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-bag2"></i><span>KEEP A RECORD OF ALL YOUR PURCHASES</span>
+                                        </li>
+                                    </ul>
+                                </figure>
+                                <div class="ps-section__coupon"><span>$25</span>
+                                    <aside>
+                                        <h5>A small gift for your first purchase</h5>
+                                        <p>Martfury give $25 as a small gift for your first purchase. Welcome to Martfury!</p>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <%- include('./components/newsletter/newsletter.ejs') %>
+                <%- include('./components/footer/footer') %>
+                    <script src="/assets/js/main.js"></script>
+                    <script src="/assets/js/auth-sign-in.js"></script>
+    </body>
+
+    </html>

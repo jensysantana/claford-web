@@ -1,0 +1,62 @@
+<%- include('./components/head/head') %>
+    <style>
+        .container-thanks {
+            margin-top: 10vh;
+        }
+        
+        .order-number {
+            border-radius: 20px;
+            background-color: rgba(193, 193, 193, 0.7);
+            color: #000000;
+            padding: 10px;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+        
+        .container-thanks h2 {
+            font-size: 3rem;
+        }
+        
+        .thanks {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .text-info {
+            margin-bottom: 2px;
+        }
+        
+        .web-page {
+            font-weight: 500;
+        }
+        
+        .get-started {
+            background-color: salmon;
+            border-radius: 10px;
+            padding: 8px;
+            color: #000000;
+            letter-spacing: 1.2px;
+        }
+        
+        @media only screen and (max-width: 378px) {
+            .container-thanks {
+                margin-top: 17vh;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <%- include('./components/headerWeb/headerWeb') %>
+            <div class="container">
+                <div class="my-3 text-center" id="alertShow"></div>
+            </div>
+
+
+            <%- include('./components/newsletter/newsletter.ejs') %>
+                <%- include('./components/footer/footer') %>
+                    <script src="/assets/js/main.js"></script>
+                    <script src="/assets/js/account-validate.js"></script>
+    </body>
+
+    </html>

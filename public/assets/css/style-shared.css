@@ -1,0 +1,73 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.iconsize {
+    font-size: 30px !important;
+}
+
+.bypass {
+    color: #1ed12d;
+    /* opacity: 1; */
+}
+
+.errorInputForm {
+    opacity: 1;
+    border: 1px solid #bb2929 !important;
+}
+
+.error {
+    color: #bb2929 !important;
+    opacity: 1;
+}
+
+.icon-input-status {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    /* bottom: 50%; */
+    z-index: 100;
+    transform: translate(-5%, 50%);
+    /* opacity: 0; */
+}
+
+
+/* account-recovery-feedback page */
+
+.accrc-msg {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.accrc-msg h1 {
+    font-weight: 500;
+    font-size: 32.1px;
+}
+
+.accrc-msg .contact-type {
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.accrc-msg .contact-type h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.accrc-msg .contact-type p {
+    font-weight: 400;
+    font-size: 13.6px;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .accrc-msg {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        width: 425px;
+    }
+}

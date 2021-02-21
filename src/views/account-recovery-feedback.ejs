@@ -1,0 +1,67 @@
+<%- include('./components/head/head') %>
+    <style>
+        .passMargin {
+            margin-bottom: 6rem;
+        }
+        /* .accrc-msg {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            max-width: 85%;
+        } */
+    </style>
+    </head>
+
+    <body>
+        <%- include('./components/headerWeb/headerWeb') %>
+
+            <div class="ps-page--my-account">
+
+                <div class="ps-my-account-2">
+                    <div class="container">
+                        <div class="d-flex justify-content-center mb-5">
+                            <!-- Need to be a photo -->
+                            <h2>Claford</h2>
+                        </div>
+
+                        <div id="alertShow" class="my-3 text-center"></div>
+
+                        <div class="row justify-content-center mb-5">
+                            <div class="accrc-msg">
+                                <h1 class="">Get help signing in</h1>
+                                <p class="">For your security, we need to make sure it's really you. How do you want us to contact you?</p>
+                                <div id="htmlEmailPass"></div>
+                                <!-- 
+                                <div class="contact-type">
+                                    <h2>Email</h2>
+                                    <p id="email-sent-to" class="text-success"></p>
+                                </div>
+                                <div class="form-group submtit mt-4 submtit-btn">
+
+                                </div>
+                                <div class="contact-type">
+                                    <h2>Phone</h2>
+                                    <p id="email-sent-to" class="text-success"></p>
+                                </div>
+                                <div class="form-group submtit mt-4 submtit-btn">
+
+                                </div> -->
+
+                            </div>
+                            <!-- <p>Have issue with your email? <a href="/auth/recovery-mobile?uaid=${decodedEmail}" class="text-primary">Recover with phone number.</a></p> -->
+
+                        </div>
+                        <p class="text-center mt-5">
+                            For assistance accessing your account,
+                            <a href="/contacts" class="text-primary">please contact us 24/7.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <%- include('./components/footer/footer') %>
+                <script src="/assets/js/main.js"></script>
+                <script src="/assets/js/account-recovery-feedback.js"></script>
+    </body>
+
+    </html>

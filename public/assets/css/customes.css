@@ -1,0 +1,12 @@
+.input-height {
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+sub {
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    color: rgb(241, 15, 15);
+}
